@@ -1,13 +1,19 @@
-import express, { static } from "express";
-import { urlencoded } from "body-parser";
-import cors from "cors";
-import mongoose from "mongoose";
-import { resolve } from "path";
-import { userInfo } from "os";
+// import express, { static } from "express";
+// import { urlencoded } from "body-parser";
+// import cors from "cors";
+// import mongoose from "mongoose";
+// import { resolve } from "path";
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const cors = require('cors');
+
 
 const app = express();
 app.use(cors());
-app.use(urlencoded({ extended: false }));
+// app.use(urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 const port = 5000;
