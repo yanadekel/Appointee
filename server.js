@@ -10,7 +10,7 @@ app.use(cors());
 app.use(urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const port = 8000;
+const port = 5000;
 const uri = "mongodb+srv://YANA:72877287@realmcluster.lwtcs.mongodb.net/AppointeeDB?retryWrites=true&w=majority";
 
 
