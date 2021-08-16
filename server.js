@@ -25,9 +25,6 @@ mongoose
     console.log("database connect");
   });
 
-app.get("/api/getUser", (req, res) =>
-  res.send({ username: userInfo().username })
-);
 
 if (process.env.NODE_ENV === "production") {
   // Exprees will serve up production assets

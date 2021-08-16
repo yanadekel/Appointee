@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.css';
 import { Route } from 'react-router';
-import User from './components/user.component';
 import { BrowserRouter } from 'react-router-dom';
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Route exact path='/' component={User} />
+        <Route exact path='/'/>
       </BrowserRouter>
 
     </div>
